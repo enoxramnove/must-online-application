@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | MUST online application form</title>
+    <meta name="description" content="Create an account on the MUST online application platform. By Innocent Ssemyalo from morden technologies uganda.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development, tutorials">
+    <meta name="robots" content="index, follow">
+    <title>Create Account | MUST online application form</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Create Account Form -->
     <div class="signup-container">
         <img src="ham.png">
         <h1>Welcome to MUST online application platform!</h1>
-        <p><b>Login here!</b></p>
+        <p><b>Create your account here!</b></p>
 
+        <!--these are the credentials needed when creating an account-->
         <form action="" method="post">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" placeholder="Enter your username here!">
@@ -24,7 +29,7 @@
             <input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+()\\s-]{7,}" placeholder="+256 700 000 000">
 
             <label for="age">Age</label>
-            <input id="age" name="age" type="number" placeholder="Enter your age here!">
+            <input id="age" name="age" type="number" min="1" placeholder="Enter your age here!">
 
             <label for="sex">Sex/Gender</label>
             <select name="name" id="id">
@@ -39,8 +44,10 @@
 
         </form>
 
+        <!-- Submit and Login buttons -->
         <p><b>Submit!</b><button>Create an account!</button></p>
 
+        <!-- Login button for users who already have an account -->
         <p><b>I have an account!</b><a href="login.html"><button>Login</button></a></p>
 
     </div>

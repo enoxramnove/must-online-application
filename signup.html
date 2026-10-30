@@ -18,9 +18,9 @@
         <p><b>Create your account here!</b></p>
 
         <!--these are the credentials needed when creating an account-->
-        <form action="" method="post">
+        <form action="" method="post" id="signup-form">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Enter your username here!">
+            <input type="text" name="username" id="name" placeholder="Enter your username here!">
 
             <label for="email">Email</label>
             <input type="text" name="email" id="email" placeholder="Enter your email here!">
@@ -38,9 +38,9 @@
             </select>
 
             <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Enter your password here!">
-            <label for="password">Confirm Password</label>
-            <input type="password" name="password" placeholder="Confirm Password">
+            <input type="password" name="password" id="create-password" placeholder="Enter your password here!">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
 
         </form>
 
@@ -51,5 +51,7 @@
         <p><b>I have an account!</b><a href="login.html"><button>Login</button></a></p>
 
     </div>
+    <!-- put our js here -->
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>

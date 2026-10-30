@@ -2,7 +2,9 @@
 const loginForm = document.getElementById('login-form');
 
 loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    if (!validateLoginForm()) {
+        event.preventDefault(); // Prevent form submission
+    }
 
     /*/get the login form data
     const loginUsername = document.getElementById('username').value;
@@ -42,7 +44,9 @@ function validateLoginForm() {
 
 const signupForm = document.getElementById('signup-form');
 signupForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    if (!validateSignupForm()) {
+        event.preventDefault(); // Prevent form submission
+    }
 
     /*/get the signup form data
    const signupUsername = document.getElementById('name').value;

@@ -1,12 +1,13 @@
 // all the events are handled in this file
 const loginForm = document.getElementById('login-form');
 
-loginForm.addEventListener('submit', function(event) {
-    if (!validateLoginForm()) {
-        event.preventDefault(); // Prevent form submission
-    }
+if (loginForm) {
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        validateLoginForm();
 
-    /*/get the login form data
+
+        /*/get the login form data
     const loginUsername = document.getElementById('username').value;
     const loginPassword = document.getElementById('password').value;
 
@@ -20,7 +21,8 @@ loginForm.addEventListener('submit', function(event) {
    const message = document.getElementById('message');
     message.textContent = "You have successfully logged in!";
     message.style.color = "green";*/
-});
+    });
+}
 
 function validateLoginForm() {
     const username = document.getElementById('username').value;
@@ -40,15 +42,14 @@ function validateLoginForm() {
     }
 }
 
-
-
 const signupForm = document.getElementById('signup-form');
-signupForm.addEventListener('submit', function(event) {
-    if (!validateSignupForm()) {
-        event.preventDefault(); // Prevent form submission
-    }
 
-    /*/get the signup form data
+if (signupForm) {
+    signupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        validateSignupForm();
+
+        /*/get the signup form data
    const signupUsername = document.getElementById('name').value;
    const signupPassword = document.getElementById('create-password').value;
    const signupConfirmPassword = document.getElementById('confirm-password').value;
@@ -72,7 +73,8 @@ signupForm.addEventListener('submit', function(event) {
    const message = document.getElementById('message');
    message.textContent = "You have successfully signed up!";
    message.style.color = "green";*/
-});
+    });
+}
 
 function validateSignupForm() {
     const name = document.getElementById('name').value;
